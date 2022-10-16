@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    margin: 50px 50px 0 50px;
+}
+
+.nav-items {
+    display: flex;
+    flex: .5;
+    align-items: center;
+    gap: 20%;
+    font-size: 20px;
+}
+
+.nav-items h5{
+    cursor: pointer;
+}
+
+.nav-items .active-item {
+    color: #FE5E35;
+}
+
+nav .logo {
+    display: block;
+    width: 110px;
+}
+
+nav .actions-img {
+    display: block;
+    width: 170px;
+}
+
+/*Banner*/
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    margin-top: 50px;
+    margin-left: 62px;
+}
+
+.left-section h3 { 
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.left-section h3 img{
+    width: 40px;
+}
+
+.left-section h1{
+    font-size: 60px;
+    font-family: 'Fredoka One', sans-serif;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+}
+
+.sub-headlines h5{
+    margin-left: 25px;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.sub-headlines img{
+    background: #FE5E35;
+    padding: 4px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -6px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.left-section .text {
+    margin: 35px 0;
+    font-size: 10px;
+    width: 54%;
+}
+
+.action-btn{
+    outline: none;
+    border: none;
+    padding: 15px 25px;
+    border-radius:  50px;
+    background-color: #FE5E35;
+    color: #FFFFFF;
+    /* font-family: 'Fredoka', sans-serif; */
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.right-section{
+    position: relative;
+}
+
+.headphone-div {
+    position: relative;
+}
+
+.headphone-img{
+    width: 350px;
+    position: absolute;
+    top: 12px;
+    left: -250px;
+    right: 0;
+    z-index: -1;
+}
+
+.discount {
+    width: 140px;
+    position: absolute;
+    top: 185px;
+    left: -330px;
+    right: 0;
+}
+
+.discount-content {
+    position: absolute;
+    top: 225px;
+    left: -290px;
+    right: 0;
+}
+
+.dots{
+    position: absolute;
+    top: 390px;
+    left: -120px;
+}
+
+.dot{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.yellow-dot{
+    background-color: #FBD104;
+    border-radius: 50%;
+}
+.tomato-dot{
+    background-color: #FE5E35;
+    border-radius: 50%;
+}
+.black-dot{
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.right-section .action-btn {
+    position: relative;
+    top: 437px;
+    left: -158px;
+    right: 0;
+    color: #fff;
+    width: 150px;
+}
+
+.fa-solid {
+    display: none !important;
+}
+
+/* RESPONSIVENESS FOR DIFFERENT SCREEN SIZE*/
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .left-section h1{
+        font-size: 3.3rem;
+    }
+}  
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    nav .nav-items {
+        display: none;
+    }
+
+    .intro-section {
+       margin-bottom: 2rem;
+       flex-direction: column;
+       gap: 3rem;
+    }
+
+    .right-section , 
+    .headphone-div {
+        position: relative;
+    }
+
+    .discount {
+        position: absolute;
+        top: 240px;
+        left: 90px;
+        width: 140px;
+    }
+
+    .discount-content {
+        position: absolute;
+        top: 275px;
+        left: 130px;
+    } 
+
+    .headphone-img {
+        display: block;
+        margin: 0 auto;
+        position: static;
+        width: 70%;
+    }
+
+    .dots{
+        position: absolute;
+        top: 550px;
+        left: 300px;
+    } 
+    .dot{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+    }
+    .right-section .action-btn {
+        position: relative;
+        top: 100px;
+        left: 260px;
+        right: 0;
+        color: #fff;
+        width: 250px;
+    }
+
+    .add-cart-btn {
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+    .intro-section {
+        margin-bottom: 2rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .left-section .text {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .headphone-img {
+        display: block;
+        margin: 0 auto;
+        position: static;
+        width: 65%;
+    }
+
+    .discount {
+        position: absolute;
+        top: 220px;
+        left: 120px;
+        width: 110px;
+    }
+    
+    .discount-content {
+        position: absolute;
+        top: 252px;
+        left: 147px;
+        font-size: 13px;
+    } 
+    .dots{
+        position: absolute;
+        top: 500px;
+        left: 320px;
+    } 
+    .dot{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .right-section .action-btn {
+        position: relative;
+        top: 80px;
+        left: 260px;
+        right: 0;
+        color: #fff;
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    nav .nav-items {
+        display: none;
+    }
+    .actions-img {
+        /* display: none; */
+        opacity: 0;
+    }
+    .intro-section {
+        margin-bottom: 2rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .headphone-img {
+        display: block;
+        margin: 0 auto;
+        margin-top: -180px;
+        position: relative;
+        width: 100%;
+        left: 70px;
+    }
+    
+    .discount {
+        position: relative;
+        top: 140px;
+        left: 43px;
+        width: 90px;
+    }
+
+    .discount-content {
+        position: relative;
+        top: 75px;
+        left: 70px;
+        font-size: 10px;
+    } 
+    .dots{
+        position: absolute;
+        top: 320px;
+        left: 184px;
+    }
+    .dot{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+    .right-section .action-btn {
+        position: relative;
+        top: 80px;
+        left: 140px;
+        right: 0;
+        color: #fff;
+        width: 250px;
+    }
+    .action-btns {
+        display: flex
+    }
+    .left-section .text {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .left-section h1{
+        font-size: 30px;
+    } 
+    .fa-solid {
+        display: block !important;
+    }
+    nav{
+        margin-left: 50px;
+        margin-top: 45px;
+    }
+}

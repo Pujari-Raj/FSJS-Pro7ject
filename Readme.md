@@ -1,4 +1,4 @@
-# Live Class Project7
+# Live Class Project-7
 
 Project- Product | Landing Page
 
